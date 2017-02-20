@@ -6,3 +6,4 @@ Seguridad de php
 chown root:root -R /var/www/
  chmod 777 -R /var/www/
 
+http://www.grupotelfor.com/blog/7-centos-7/13-linux-how-to-open-a-port-on-rhel-centos-7-firewalld
