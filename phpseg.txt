@@ -1,0 +1,8 @@
+Complementos para php
+apt-get install -y php-cli php-all-dev php-common php-curl php-dev php-gd php-cgi
+
+Seguridad de php
+
+chown root:root -R /var/www/
+ chmod 777 -R /var/www/
+
