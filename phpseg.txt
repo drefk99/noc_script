@@ -16,3 +16,7 @@ https://git-scm.com/book/es/v1/Empezando-Instalando-Git
 how to close new window on shell
 
 http://askubuntu.com/questions/616738/how-do-i-close-a-new-firefox-window-from-the-terminal
+
+to do scripting
+
+http://www.escomposlinux.org/fserrano/index_163.html
