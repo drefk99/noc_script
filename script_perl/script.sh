@@ -7,6 +7,9 @@ inicio=`cat dati`
 fin=`cat datf`
 
 
+
+firefox
+
 #CPU
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=94&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Nu0
@@ -153,5 +156,7 @@ echo inicio > dati
 echo inicio > datf 
 
 #R
+
+wmctrl -ic "$(wmctrl -l | grep 'Mozilla Firefox' | tail -1 | awk '{ print $1}')"
 
 exit
