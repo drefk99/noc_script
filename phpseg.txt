@@ -20,3 +20,9 @@ http://askubuntu.com/questions/616738/how-do-i-close-a-new-firefox-window-from-t
 to do scripting
 
 http://www.escomposlinux.org/fserrano/index_163.html
+
+convert rrdtool
+
+rrdtool dump local_linux_machine_mem_buffers_4.rrd > /home/drst/Documentsnuevo.csv
+
+Cuando se instala cacti uno se deben dar permisos al usuario de sql para el timezone y dar permisos de escritura y lectura a los directorio rra y log de cacti,
