@@ -8,55 +8,55 @@ fin=`cat datf`
 
 
 #CPU
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=94&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=31&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Nu0
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=93&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=32&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #vl1
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=70&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=6&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A12
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=79&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=15&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A1
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=71&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=7&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A2
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=72&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=8&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A3
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=73&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=9&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A4
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=74&rra_id=0&graph_start=$inicio&graph_end=$fin"
-#A5
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=75&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=10&rra_id=0&graph_start=$inicio&graph_end=$fin"
+#A421
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=30&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A6
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=76&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=11&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A7
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=77&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=12&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #A8
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=78&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=14&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Almacen
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=81&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=17&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Apoyo a la Docencia
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=89&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=26&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Cajas 
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=82&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=18&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #CCA
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=88&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=25&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #CETED
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=91&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=28&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Core1
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=92&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=29&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Gobierno
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=90&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=27&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Idiomas 
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=80&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=16&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Libreria
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=87&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=24&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Posgrado1
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=85&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=21&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Posgrado2
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=86&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=22&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #Seminarios
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=83&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=19&rra_id=0&graph_start=$inicio&graph_end=$fin"
 #UIM
-firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=84&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=20&rra_id=0&graph_start=$inicio&graph_end=$fin"
 
 datemon=$(date +%b)
 
@@ -69,7 +69,7 @@ then
 elif [[ "$datemon" == "mar" ]];
 then
 	datemon=03
-elif [[ "$datemon" == "arb" ]];
+elif [[ "$datemon" == "abr" ]];
 then
 	datemon=04
 elif [[ "$datemon" == "may" ]];
