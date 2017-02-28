@@ -45,11 +45,11 @@ mv 'palomar - Traffic - Gi1_0_5.csv' "'_A421_ - Traffic - Gi1_0_5'.csv"
 
 #A6
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=11&rra_id=0&graph_start=$inicio&graph_end=$fin"
-
+mv 'palomar - Traffic - Gi1_0_6.csv' "'_A6_ - Traffic - Gi1_0_6'.csv"
 
 #A7
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=12&rra_id=0&graph_start=$inicio&graph_end=$fin"
-
+mv 'palomar - Traffic - Gi1_0_7.csv' "'_A7_ - Traffic - Gi1_0_7'.csv"
 
 #A8
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=14&rra_id=0&graph_start=$inicio&graph_end=$fin"
