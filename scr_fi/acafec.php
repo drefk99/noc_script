@@ -51,6 +51,17 @@
                 <BR>
 
                 <P>
+                  <label for="apellido">Inicio de Finales<span><em>(requerido)</em></span></label>
+                  <input type="text" name="fin1" class="form-input" required/>
+                </P>
+        
+                <P>
+                  <label for="apellido">Cierre de Finales <span><em>(requerido)</em></span></label>
+                  <input type="text" name="fin2" class="form-input" required/>
+                </P>
+                <BR>
+
+                <P>
                   <label for="apellido">Inicio de extraordinarios<span><em>(requerido)</em></span></label>
                   <input type="text" name="extr1" class="form-input" required/>
                 </P>

@@ -35,6 +35,9 @@
                   $subs_ido1 = utf8_decode($_POST['ins_ido1']);
                   $subs_ido2 = utf8_decode($_POST['ins_ido2']);
 
+                  $subs_fin1 = utf8_decode($_POST['fin1']);
+                  $subs_fin2 = utf8_decode($_POST['fin2']);
+
                   $subs_ext1 = utf8_decode($_POST['extr1']);
                   $subs_ext2 = utf8_decode($_POST['extr2']);
 
@@ -54,6 +57,14 @@
                   $filed2 =  fopen("ido2.txt","w+");
                      fwrite($filed2, "$subs_ido2" . PHP_EOL);
                   fclose($filed2);
+
+                  $filef1 =  fopen("fin1.txt","w+");
+                     fwrite($filef1, "$subs_fin1" . PHP_EOL);
+                  fclose($filf1);
+
+                  $filef2 =  fopen("fin2.txt","w+");
+                     fwrite($fileef, "$subs_fin2" . PHP_EOL);
+                  fclose($filef2);
 
                   $filee1 =  fopen("ext1.txt","w+");
                      fwrite($filee1, "$subs_ext1" . PHP_EOL);

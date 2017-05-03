@@ -3,8 +3,9 @@
 
 contador=604800
 
-inicio=`cat dati`
-fin=`cat datf`
+inicio=$(cat dati)
+fin=$(cat datf)
+
 
 
 #CPU
@@ -154,26 +155,26 @@ fi
 
 dateto=$(date +$datemon-%d)
 
-dateins1a=
-dateins2a=
+dateins1a=$(cat ins1.txt)
+dateins2a=$(cat ins2.txt)
 
-dateins1b=01-18
-dateins2b=02-03
+#dateins1b=01-18
+#dateins2b=02-03
 
-dateido1a=
-dateido2a=
+dateido1a=$(cat ido1.txt)
+dateido2a=$(cat ido2.txt)
 
-dateido1b=01-20
-dateido2b=02-17
+#dateido1b=01-20
+#dateido2b=02-17
 
-dateext1a=
-dateext2a=
+dateext1a=$(cat ext1.txt)
+dateext2a=$(cat ext2.txt)
 
-dateext1b=06-12
-dateext2b=06-16
+#dateext1b=06-12
+#dateext2b=06-16
 
-#datefin1a=
-#datefin2a=
+datefin1a=$(cat fin1.txt)
+datefin2a=$(cat fin2.txt)
 
 #datefin1b=
 #datefin2b=
@@ -182,29 +183,29 @@ dateext2b=06-16
 
 if (( "$dateins1a" <= "$dateto"  &&  "$dateto" <= "$dateins2a" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/; fi  
 
-if (( "$dateins1b" <= "$dateto"  &&  "$dateto" <= "$dateins2b" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/; fi
+#if (( "$dateins1b" <= "$dateto"  &&  "$dateto" <= "$dateins2b" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/; fi
 
 
 if (( "$dateido1a" <= "$dateto"  &&  "$dateto" <= "$dateido2a" )) ; then     mv /home/drst/Downloads/*.csv datos/ins_ido/; fi
 
-if (( "$dateido1b" <= "$dateto"  &&  "$dateto" <= "$dateido2b" )) ; then     mv /home/drst/Downloads/*.csv datos/ins_ido/; fi
+#if (( "$dateido1b" <= "$dateto"  &&  "$dateto" <= "$dateido2b" )) ; then     mv /home/drst/Downloads/*.csv datos/ins_ido/; fi
 
 
 if (( "$dateext1a" <= "$dateto"  &&  "$dateto" <= "$dateext2a" )) ; then     mv /home/drst/Downloads/*.csv datos/extras/; fi
 
-if (( "$dateext1b" <= "$dateto"  &&  "$dateto" <= "$dateext2b" )) ; then     mv /home/drst/Downloads/*.csv datos/extras/; fi
+#if (( "$dateext1b" <= "$dateto"  &&  "$dateto" <= "$dateext2b" )) ; then     mv /home/drst/Downloads/*.csv datos/extras/; fi
 
 
 if (( "$datefin1a" <= "$dateto"  &&  "$dateto" <= "$datefin2a" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/; fi
 
-if (( "$datefin1b" <= "$dateto"  &&  "$dateto" <= "$datefin2b" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/; fi
+#if (( "$datefin1b" <= "$dateto"  &&  "$dateto" <= "$datefin2b" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/; fi
 
 
 inicio=`expr inicio + contador`
-fin=`expr inicio + contador`
+fin=`expr fin + contador`
 
 echo inicio > dati
-echo inicio > datf 
+echo fin > datf 
 
 #R
 
