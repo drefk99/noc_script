@@ -6,7 +6,7 @@ contador=604800
 inicio=$(cat dati)
 fin=$(cat datf)
 
-
+cd /home/drst/Downloads
 
 #CPU
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=31&rra_id=0&graph_start=$inicio&graph_end=$fin"
@@ -81,7 +81,7 @@ firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=28&rra_id=0&g
 mv 'palomar - Traffic - Gi1_0_23.csv' "'_CETED_ - Traffic - Gi1_0_23'.csv"
 
 #Core1
-firefox "http://19mv 'palomar - Traffic - Gi1_0_24.csv' "'_Core1_ - Traffic - Gi1_0_24'.csv"2.168.50.13/cacti/graph_xport.php?local_graph_id=29&rra_id=0&graph_start=$inicio&graph_end=$fin"
+firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=29&rra_id=0&graph_start=$inicio&graph_end=$fin"
 mv 'palomar - Traffic - Gi1_0_24.csv' "'_Core1_ - Traffic - Gi1_0_24'.csv"
 
 #Gobierno
@@ -179,24 +179,24 @@ datefin2a=$(cat fin2.txt)
 #datefin1b=
 #datefin2b=
 
+cd $whereisnocsistem
 
-
-if (( "$dateins1a" <= "$dateto"  &&  "$dateto" <= "$dateins2a" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/; fi  
+if (( "$dateins1a" <= "$dateto"  &&  "$dateto" <= "$dateins2a" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/;     CACTIG=datos/inscripciones; fi  
 
 #if (( "$dateins1b" <= "$dateto"  &&  "$dateto" <= "$dateins2b" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/; fi
 
 
-if (( "$dateido1a" <= "$dateto"  &&  "$dateto" <= "$dateido2a" )) ; then     mv /home/drst/Downloads/*.csv datos/ins_ido/; fi
+if (( "$dateido1a" <= "$dateto"  &&  "$dateto" <= "$dateido2a" )) ; then     mv /home/drst/Downloads/*.csv datos/ins_ido/;     CACTIG=datos/ins_ido; fi
 
 #if (( "$dateido1b" <= "$dateto"  &&  "$dateto" <= "$dateido2b" )) ; then     mv /home/drst/Downloads/*.csv datos/ins_ido/; fi
 
 
-if (( "$dateext1a" <= "$dateto"  &&  "$dateto" <= "$dateext2a" )) ; then     mv /home/drst/Downloads/*.csv datos/extras/; fi
+if (( "$dateext1a" <= "$dateto"  &&  "$dateto" <= "$dateext2a" )) ; then     mv /home/drst/Downloads/*.csv datos/extras/;     CACTIG=datos/extras; fi
 
 #if (( "$dateext1b" <= "$dateto"  &&  "$dateto" <= "$dateext2b" )) ; then     mv /home/drst/Downloads/*.csv datos/extras/; fi
 
 
-if (( "$datefin1a" <= "$dateto"  &&  "$dateto" <= "$datefin2a" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/; fi
+if (( "$datefin1a" <= "$dateto"  &&  "$dateto" <= "$datefin2a" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/;     CACTIG=datos/finales; fi
 
 #if (( "$datefin1b" <= "$dateto"  &&  "$dateto" <= "$datefin2b" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/; fi
 
@@ -207,6 +207,6 @@ fin=`expr fin + contador`
 echo inicio > dati
 echo fin > datf 
 
-#R
+Rscript script_R/noc.R
 
 exit
