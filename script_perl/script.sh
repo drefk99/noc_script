@@ -3,8 +3,8 @@
 
 contador=604800
 
-inicio=$(cat dati)
-fin=$(cat datf)
+inicio=$(cat script_perl/dati)
+fin=$(cat script_perl/datf)
 
 cd /home/drst/Downloads
 
@@ -204,9 +204,9 @@ if (( "$datefin1a" <= "$dateto"  &&  "$dateto" <= "$datefin2a" )) ; then     mv 
 inicio=`expr inicio + contador`
 fin=`expr fin + contador`
 
-echo inicio > dati
-echo fin > datf 
-
-Rscript script_R/noc.R
+echo inicio > script_perl/dati
+echo fin > script_perl/datf 
+#R
+Rscript script_R/noc_clean.R
 
 exit
