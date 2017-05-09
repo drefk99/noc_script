@@ -1,58 +1,60 @@
-CPU<-read.csv("cacti_graph/'palomar - CPU Usage'.csv",sep = ',', header = TRUE, skip = 9)
+args = commandArgs(trailingOnly=TRUE)
 
-Nu0<-read.csv("cacti_graph/'palomar - Traffic - Nu0'.csv",sep = ',', header = TRUE, skip = 9)
+CPU<-read.csv(paste(args[1],"'palomar - CPU Usage'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Vl1<-read.csv("cacti_graph/'palomar - Traffic - Vl1'.csv",sep = ',', header = TRUE, skip = 9)
+Nu0<-read.csv(paste(args[1],"'palomar - Traffic - Nu0'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A12<-read.csv("cacti_graph/'_A12_ - Traffic - Gi1_0_10'.csv",sep = ',', header = TRUE, skip = 9)
+Vl1<-read.csv(paste(args[1],"'palomar - Traffic - Vl1'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A1<-read.csv("cacti_graph/'_A1_ - Traffic - Gi1_0_1'.csv",sep = ',', header = TRUE, skip = 9)
+A12<-read.csv(paste(args[1],"'_A12_ - Traffic - Gi1_0_10'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A2<-read.csv("cacti_graph/'_A2_ - Traffic - Gi1_0_2'.csv",sep = ',', header = TRUE, skip = 9)
+A1<-read.csv(paste(args[1],"'_A1_ - Traffic - Gi1_0_1'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A3<-read.csv("cacti_graph/'_A3_ - Traffic - Gi1_0_3'.csv",sep = ',', header = TRUE, skip = 9)
+A2<-read.csv(paste(args[1],"'_A2_ - Traffic - Gi1_0_2'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A4<-read.csv("cacti_graph/'_A4_ - Traffic - Gi1_0_4'.csv",sep = ',', header = TRUE, skip = 9)
+A3<-read.csv(paste(args[1],"'_A3_ - Traffic - Gi1_0_3'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A421<-read.csv("cacti_graph/'_A421_ - Traffic - Gi1_0_5'.csv",sep = ',', header = TRUE, skip = 9)
+A4<-read.csv(paste(args[1],"'_A4_ - Traffic - Gi1_0_4'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A6<-read.csv("$CACTIG/'_A6_ - Traffic - Gi1_0_6'.csv",sep = ',', header = TRUE, skip = 9)
+A421<-read.csv(paste(args[1],"'_A421_ - Traffic - Gi1_0_5'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A7<-read.csv("$CACTIG/'_A7_ - Traffic - Gi1_0_7'.csv",sep = ',', header = TRUE, skip = 9)
+A6<-read.csv(paste(args[1],"'_A6_ - Traffic - Gi1_0_6'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A8<-read.csv("$CACTIG/'_A8_ - Traffic - Gi1_0_8'.csv",sep = ',', header = TRUE, skip = 9)
+A7<-read.csv(paste(args[1],"'_A7_ - Traffic - Gi1_0_7'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-A9<-read.csv("$CACTIG/'_A9_ - Traffic - Gi1_0_9'.csv",sep = ',', header = TRUE, skip = 9)
+A8<-read.csv(paste(args[1],"'_A8_ - Traffic - Gi1_0_8'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Almacen<-read.csv("$CACTIG/'_ALMACEN_ - Traffic - Gi1_0_12'.csv",sep = ',', header = TRUE, skip = 9)
+A9<-read.csv(paste(args[1],"'_A9_ - Traffic - Gi1_0_9'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-ApoDoc<-read.csv("$CACTIG/'_ApoyoDocencia_ - Traffic - Gi1_0_21'.csv",sep = ',', header = TRUE, skip = 9)
+Almacen<-read.csv(paste(args[1],"'_ALMACEN_ - Traffic - Gi1_0_12'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Cajas<-read.csv("$CACTIG/'_Cajas_ - Traffic - Gi1_0_13'.csv",sep = ',', header = TRUE, skip = 9)
+ApoDoc<-read.csv(paste(args[1],"'_ApoyoDocencia_ - Traffic - Gi1_0_21'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-CCA<-read.csv("$CACTIG/'_CCA_ - Traffic - Gi1_0_20'.csv",sep = ',', header = TRUE, skip = 9)
+Cajas<-read.csv(paste(args[1],"'_Cajas_ - Traffic - Gi1_0_13'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-CETED<-read.csv("$CACTIG/'_CETED_ - Traffic - Gi1_0_23'.csv",sep = ',', header = TRUE, skip = 9)
+CCA<-read.csv(paste(args[1],"'_CCA_ - Traffic - Gi1_0_20'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Core1<-read.csv("$CACTIG/'_Core1_ - Traffic - Gi1_0_24'.csv",sep = ',', header = TRUE, skip = 9)
+CETED<-read.csv(paste(args[1],"'_CETED_ - Traffic - Gi1_0_23'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Gobierno<-read.csv("$CACTIG/'_Gobierno_ - Traffic - Gi1_0_22'.csv",sep = ',', header = TRUE, skip = 9)
+Core1<-read.csv(paste(args[1],"'_Core1_ - Traffic - Gi1_0_24'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Idiomas<-read.csv("$CACTIG/'_IDIOMAS_ - Traffic - Gi1_0_11'.csv",sep = ',', header = TRUE, skip = 9)
+Gobierno<-read.csv(paste(args[1],"'_Gobierno_ - Traffic - Gi1_0_22'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Libreria<-read.csv("$CACTIG/'_Libreria_ - Traffic - Gi1_0_19'.csv",sep = ',', header = TRUE, skip = 9)
+Idiomas<-read.csv(paste(args[1],"'_IDIOMAS_ - Traffic - Gi1_0_11'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Posgrado1<-read.csv("$CACTIG/'_Posgrado1_ - Traffic - Gi1_0_16'.csv",sep = ',', header = TRUE, skip = 9)
+Libreria<-read.csv(paste(args[1],"'_Libreria_ - Traffic - Gi1_0_19'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Posgrado2<-read.csv("$CACTIG/'_Posgrado2_ - Traffic - Gi1_0_17'.csv",sep = ',', header = TRUE, skip = 9)
+Posgrado1<-read.csv(paste(args[1],"'_Posgrado1_ - Traffic - Gi1_0_16'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-Seminarios<-read.csv("$CACTIG/'_Seminarios_ - Traffic - Gi1_0_14'.csv",sep = ',', header = TRUE, skip = 9)
+Posgrado2<-read.csv(paste(args[1],"'_Posgrado2_ - Traffic - Gi1_0_17'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-UIM<-read.csv("$CACTIG/'_UIM_ - Traffic - Gi1_0_15'.csv",sep = ',', header = TRUE, skip = 9)
+Seminarios<-read.csv(paste(args[1],"'_Seminarios_ - Traffic - Gi1_0_14'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-INhisto<-read.csv("$CACTIG/'INhistorico'.csv",sep = ',', header = TRUE, skip = 0)
+UIM<-read.csv(paste(args[1],"'_UIM_ - Traffic - Gi1_0_15'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
 
-OUThisto<-read.csv("$CACTIG/'OUThistorico'.csv",sep = ',', header = TRUE, skip = 0)
+INhisto<-read.csv(paste(args[1],"'INhistorico'.csv", sep="/"),sep = ',', header = TRUE, skip = 0)
+
+OUThisto<-read.csv(paste(args[1],"'OUThistorico'.csv", sep="/"),sep = ',', header = TRUE, skip = 0)
 
 INhisto$X<-NULL
 OUThisto$X<-NULL
@@ -70,6 +72,6 @@ INNhist<-rbind(INhisto, INtotal)
 
 OUTNhist<-rbind(OUThisto, OUTtotal)
 
-write.csv(INNhist,file = "$CACTIG/'INhistorico'.csv", row.names = TRUE)
+write.csv(INNhist,file = paste(args[1],"'INhistorico'.csv", sep="/"), row.names = TRUE)
 
-write.csv(OUTNhist,file = "$CACTIG/'OUThistorico'.csv", row.names = TRUE)
+write.csv(OUTNhist,file = paste(args[1],"'OUThistorico'.csv", sep="/"), row.names = TRUE)
