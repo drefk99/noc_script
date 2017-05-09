@@ -206,7 +206,8 @@ fin=`expr fin + contador`
 
 echo inicio > script_perl/dati
 echo fin > script_perl/datf 
+
 #R
-Rscript script_R/noc_clean.R
+Rscript script_R/noc_clean.R $CACTIG
 
 exit
