@@ -76,6 +76,10 @@ OUTtotal$Inbound<-NULL
 names(OUTtotal)=c("Nu0", "Vl1","A12", "A1", "A2", "A3", "A4", "A421", "A6", "A7", "A8", "A9", "Almacen", "ApoDoc", "Cajas", "SUM", "CCA", "CETED", "Gobierno", "Idiomas", "Libreria", "Posgrado1", "Posgrado2", "Seminarios", "UIM" )
 names(INtotal)=c("Nu0", "Vl1","A12", "A1", "A2", "A3", "A4", "A421", "A6", "A7", "A8", "A9", "Almacen", "ApoDoc", "Cajas", "SUM", "CCA", "CETED", "Gobierno", "Idiomas", "Libreria", "Posgrado1", "Posgrado2", "Seminarios", "UIM" )
 
+OUTtotal[is.na(OUTtotal)]<-0
+INtotal[is.na(INtotal)]<-0
+
+
 #Join the new information with history
 INNhist<-rbind(INhisto, INtotal)
 
@@ -85,3 +89,9 @@ OUTNhist<-rbind(OUThisto, OUTtotal)
 write.csv(INNhist,file = paste(args[1],"'INhistorico'.csv", sep="/"), row.names = TRUE)
 
 write.csv(OUTNhist,file = paste(args[1],"'OUThistorico'.csv", sep="/"), row.names = TRUE)
+
+
+
+
+OUTtotal2[is.na(OUTtotal2)]<-0
+OUTtotal2$datg2<-ifelse(OUTtotal2$datg2=="NaN", 0, OUTtotal2$datg2)

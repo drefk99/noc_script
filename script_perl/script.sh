@@ -1,12 +1,16 @@
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
 
+#Interval to increment the dates
 contador=604800
 
+#To get the last date to start and finished
 inicio=$(cat script_perl/dati)
 fin=$(cat script_perl/datf)
 
+#To Download the CSV files from cacti to Downloads directory
 cd /home/drst/Downloads
+
 
 #CPU
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=31&rra_id=0&graph_start=$inicio&graph_end=$fin"
@@ -112,9 +116,10 @@ mv 'palomar - Traffic - Gi1_0_14.csv' "'_Seminarios_ - Traffic - Gi1_0_14'.csv"
 firefox "http://192.168.50.13/cacti/graph_xport.php?local_graph_id=20&rra_id=0&graph_start=$inicio&graph_end=$fin"
 mv 'palomar - Traffic - Gi1_0_15.csv' "'_UIM_ - Traffic - Gi1_0_15'.csv"
 
-
+#Format of date to compare 
 datemon=$(date +%b)
 
+#Transform the month in numbers to words
 if [[ "$datemon" == "ene" ]];
 then
 	datemon=01
@@ -153,8 +158,10 @@ then
 	datemon=12
 fi
 
+#Join between the day an month with new format
 dateto=$(date +$datemon-%d)
 
+#Dates for diferents events
 dateins1a=$(cat ins1.txt)
 dateins2a=$(cat ins2.txt)
 
@@ -179,6 +186,7 @@ datefin2a=$(cat fin2.txt)
 #datefin1b=
 #datefin2b=
 
+#To move the CSV files to the specific directory 
 cd $whereisnocsistem
 
 if (( "$dateins1a" <= "$dateto"  &&  "$dateto" <= "$dateins2a" )) ; then     mv /home/drst/Downloads/*.csv datos/inscripciones/;     CACTIG=datos/inscripciones; fi  
@@ -200,14 +208,15 @@ if (( "$datefin1a" <= "$dateto"  &&  "$dateto" <= "$datefin2a" )) ; then     mv 
 
 #if (( "$datefin1b" <= "$dateto"  &&  "$dateto" <= "$datefin2b" )) ; then     mv /home/drst/Downloads/*.csv datos/finales/; fi
 
-
+#Incease the date for the next session
 inicio=`expr inicio + contador`
 fin=`expr fin + contador`
 
+#Save the dates in files
 echo inicio > script_perl/dati
 echo fin > script_perl/datf 
 
-#R
+#R script to clean and join the CSV files
 Rscript script_R/noc_clean.R $CACTIG
 
 exit
