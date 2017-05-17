@@ -1,4 +1,6 @@
 #Load History files
+#CPU<-read.csv(paste(args[1],"'palomar - CPU Usage'.csv", sep="/"),sep = ',', header = TRUE, skip = 9)
+
 INhisto<-read.csv(paste(args[1],"'INhistorico'.csv", sep="/"),sep = ',', header = TRUE, skip = 0)
 
 OUThisto<-read.csv(paste(args[1],"'OUThistorico'.csv", sep="/"),sep = ',', header = TRUE, skip = 0)
